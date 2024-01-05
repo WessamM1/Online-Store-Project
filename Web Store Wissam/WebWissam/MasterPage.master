@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: large;
+            height: 15px;
+        }
+        .auto-style2 {
+            height: 15px;
+        }
+        .auto-style3 {
+            width: 1861px;
+            height: 1256px;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+        }
+        .mnayky {
+            width: 227px;
+            height: 90px;
+            position: absolute;
+            top: 302px;
+            left: 1334px;
+            z-index: 1;
+        }
+        .auto-style4 {
+            width: 267px;
+            height: 92px;
+            position: absolute;
+            top: 123px;
+            left: 104px;
+            z-index: 1;
+            margin-top: 0px;
+        }
+        .auto-style5 {
+            width: 100%;
+            height: 87px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .auto-style6 {
+            height: 168px;
+            position: absolute;
+            top: 108px;
+            left: 1075px;
+            width: 16%;
+            z-index: 1;
+            margin-top: 0px;
+        }
+        .auto-style7 {
+            width: 161px;
+        }
+         html {
+            background: url(pics/Destiny21.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moze-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .auto-style888 {
+            margin-top: 0px;
+        }
+        .auto-style999 {
+            font-size: large;
+            height: 15px;
+            width: 281px;
+        }
+        .auto-style1000 {
+            margin-bottom: 0px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+    <div class="auto-style3" style="z-index: 1">
+        <asp:Panel ID="Panel1" runat="server" CssClass="auto-style4">
+          
+            <table style="border-color: #000000; border-style: dashed; z-index: 1;" class="auto-style5">
+                <tr>
+                    <td style="border-style: inset"><asp:Label ID="Label1" runat="server" Text="User Name" ForeColor="#33CCFF"></asp:Label></td>
+                    <td class="auto-style7" style="border-style: inset"><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                </tr>
+               <tr>
+                    <td style="border-style: inset"><asp:Label ID="Label2" runat="server" Text="Password" ForeColor="#33CCFF"></asp:Label></td>
+                    <td style="border-style: inset" class="auto-style7"><asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td style="border-style: inset" style="text-align: center">
+                        <asp:Button ID="Button1" runat="server" Text="login" OnClick="Button1_Click" /></td>
+                    <td style="border-style: inset" class="auto-style7"><asp:Label ID="Label3" runat="server" Text="Label" Visible="False" ForeColor="Red"></asp:Label></td>
+                </tr>
+                <tr><td>
+                    <asp:Label ID="Label5" runat="server" Text="Label" Visible="False"></asp:Label></td></tr>
+            </table>
+              
+        </asp:Panel>
+        <asp:Panel ID="Panel2" runat="server">
+            <center>
+        <table class="auto-style6" style="border: medium dashed #000000;">
+         <tr> <td><asp:LinkButton ID="LinkButton6" runat="server" PostBackUrl="~/UserProfile.aspx">گےEdit Profileےگ</asp:LinkButton></td>  </tr>
+              <tr> <td style="border-style: inset; border-width: medium"><asp:Label ID="Label4" runat="server" Text="Label" ForeColor="#33CCFF"></asp:Label></td>  
+                <td rowspan="2" style="border-style: inset"><asp:Image ID="Image3" runat="server" Height="150px" Width="150px"></asp:Image></td>
+            </tr>
+            <tr>
+                <td style="border-style: inset"><asp:Button ID="Button2" runat="server" Text="LogOut" OnClick="Button2_Click" Height="24px"></asp:Button></td>
+            </tr>
+      
+           
+        </table> </center>
+</asp:Panel>
+        <table style="width: 100%;">
+            <tr>
+                <td colspan="5"><asp:Image ID="Image1" runat="server" ImageUrl="~/pics/Destiny2.jpg" Width="1929px" CssClass="auto-style1000" Height="680px" /></td>
+             
+            </tr>
+            <tr>
+                <td class="auto-style999" style="text-align: center; background-color: #000000; background-image: none;">
+                    <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Default.aspx" Font-Size="X-Large" ForeColor="#33CCFF">Home</asp:LinkButton></td>
+                <td class="auto-style1" style="text-align: center; background-color: #000000; background-image: none;">
+                    <asp:LinkButton ID="LinkButton2" runat="server"  PostBackUrl="~/Register.aspx" Font-Size="X-Large" ForeColor="#33CCFF">Regis1ter</asp:LinkButton></td>
+                <td style="text-align: center; background-color: #000000; background-image: none; font-size: large;" class="auto-style2"><asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/mycart.aspx" Font-Size="X-Large" ForeColor="#33CCFF">My Cart</asp:LinkButton></td>
+                <td style="text-align: center; background-color: #000000; background-image: none; font-size: large;" class="auto-style2">
+                    <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/History.aspx" Font-Size="X-Large" ForeColor="#33CCFF">History</asp:LinkButton></td>
+                <td style="text-align: center; background-color: #000000; background-image: none; font-size: large;" class="auto-style2">
+                    <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/Message.aspx" Font-Size="X-Large" ForeColor="#33CCFF">Message</asp:LinkButton>
+                    <asp:Image ID="Image2" runat="server" CssClass="auto-style888" Height="31px" ImageUrl="~/pics/new.png" Width="40px" Visible="False" />
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="5">  
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+                </td>
+               </tr>
+        
+        </table>
+      
+    </div>
+    </form>
+</body>
+</html>
